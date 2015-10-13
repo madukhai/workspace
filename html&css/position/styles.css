@@ -1,0 +1,147 @@
+
+a:hover {
+	text-decoration: none;
+}
+a:visited{
+	!important;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+.basic{
+
+	border: 1px solid black;
+
+}
+.box {
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+	margin: 20px;
+	box-sizing: border-box;
+}
+.first{
+	background-color: red;
+}
+.second{
+	background-color: blue;
+}
+.third{
+	background-color: green;
+}
+.dis {
+	font-size:0;
+	border: 1px solid black;
+}
+.dis .box{
+	display: inline-block;	
+	font-size:16px;
+}
+.dis:nth-child(1){
+	color: yellow;
+}
+.dis {
+	background-color: orange;
+}
+
+.flt .box{
+	float:left;
+}
+.pos {
+	height: 200px;
+}
+
+.pos .first{
+	position: relative;
+}
+.pos .second{
+	position: relative;
+	left: 190px;
+	top: -170px;
+}
+.pos .third{
+	position: relative;
+	top: -340px;
+	left: 380px;
+}
+.basic{
+	position: relative;
+}
+
+.large{ 
+	width: 95%;
+	height: 206px;
+	margin: 20px auto;
+	border: 5px solid blue;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+.large .box{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	margin: 0px;
+	font-size: 16px
+}
+.one .r{
+	float: right;
+}
+.one .l{
+	float: left;
+}
+
+.two .small{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px
+}
+.two .bl{
+	display: inline-block;
+	
+}
+
+.three .b{
+	position: absolute;
+	top: -50px;
+	left: 120px;
+}
+.three .c{
+	position: absolute;
+	bottom: 50px;
+	right: -20px;
+	
+}
+.three .d{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	
+}
+.three{
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

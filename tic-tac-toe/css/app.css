@@ -1,0 +1,24 @@
+/*
+	overwrite Bootstrap.
+*/
+
+/**/
+
+
+.game{
+	width: 700px;
+	height: 700px;
+	border: 1px solid black;
+	margin: 10px auto;
+}
+.game_btn{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+}
+#start{
+	width: 500px;
+	display: block;
+	padding: 20px;
+	margin: 50px auto;
+}

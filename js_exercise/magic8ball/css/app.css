@@ -1,0 +1,99 @@
+body,html{
+	height:100%;
+	font-size:100%;
+	margin:0;
+}
+
+.magic_ball{
+	position: relative;
+	background: url(../img/magic8ball.jpg);
+	background-size:contain;
+	background-position: center center;
+	background-repeat: no-repeat no-repeat;
+	width:400px;
+	height:400px;
+	margin:40px auto;
+}
+
+.msg{
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	background: black;
+	top: 112px;
+	left: 111px;
+	border-radius: 100%;
+	display: none;
+}
+
+.msg-inner{
+	display: table;
+	color:white;
+	font-size:1em;
+	letter-spacing:0.05rem;
+	padding:40px 20px;
+	height:110px;
+}
+.msg-txt{
+	display:table-cell;
+	height:100%;
+	width:140px;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.question-form{
+	width:400px;
+	margin:40px auto;
+}
+button{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	background-color: #4ECF90;
+	border: 3px solid #4ECFA4;
+	color: white;
+	outline: none;
+	transition: background-color 300ms ease-out;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	-webkit-appearance: none;
+	font-weight: normal !important;
+	width: 100%;
+}
+input.field{
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: white;
+	font-family: inherit;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.75);
+	display: block;
+	font-size: 0.875rem;
+	margin: 0 0 1rem 0;
+	padding: 0.5rem;
+	height: 2.3125rem;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+.hangman{
+	margin: 20px 30px;
+	border: 1px solid black;
+}

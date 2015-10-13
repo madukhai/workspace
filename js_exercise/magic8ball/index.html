@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+	<section class="question-form">
+		<input id="question" type="text" placeholder="Type a question" class="field"><button id="submit-question">Ask Question</button>
+	</section>
+	<section class="magic_ball">
+		<div class="msg">
+			<div class="msg-inner">
+				<div id="msg-txt" class="msg-txt">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hangman">
+		<button id="start">start</button>
+		<p>Tries: <input id="tries" type="text" /></p>
+		<p>length: <input id="length" type="text" /></p>
+		
+		<p>Used: <input id="used" type="text" /></p>
+		
+		<p>word: <input id="matched" type="text" /></p>
+		
+		<p>Please type a letter: <input id="key" type="text" /></p>
+		
+		
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/hidden_app.js"></script>
+</body>
+</html>

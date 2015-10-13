@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Item Animation Layout - Demo 2</title>
+		<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
+		<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+			<div id="theSidebar" class="sidebar">
+				<button class="close-button fa fa-fw fa-close"></button>
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/MotionBlurEffect/" title="Previous Demo"><span>Previous Demo</span></a>
+					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23872" title="Back to the article"><span>Back to the Codrops article</span></a>
+				</div>
+				<h1><span>Animated<span> Grid Layout</h1>
+				<nav class="codrops-demos">
+					<a href="index.html">Demo 1</a>
+					<a class="current-demo" href="index2.html">Demo 2</a>
+				</nav>
+				<div class="related">
+					<h3>Related Demos</h3>
+					<a href="http://tympanus.net/Development/BookPreview/">Book Preview</a>
+					<a href="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/">Thumbnail Grid</a>
+					<a href="http://tympanus.net/Development/3DGridEffect/">3D Grid Effect</a>
+				</div>
+			</div>
+			<div id="theGrid" class="main">
+				<section class="grid">
+					<header class="top-bar">
+						<h2 class="top-bar__headline">Latest articles</h2>
+						<div class="filter">
+							<span>Filter by:</span>
+							<span class="dropdown">Popular</span>
+						</div>
+					</header>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Hope for Amy Walters</h2>
+						<div class="loader"></div>
+						<span class="category">Life &amp; Death</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">My Father told me...</h2>
+						<div class="loader"></div>
+						<span class="category">Nature vs. Nurture</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/5.png" alt="author05" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">On Humans &amp; other Beings</h2>
+						<div class="loader"></div>
+						<span class="category">Stories for humans</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Things we Lost in the Fire</h2>
+						<div class="loader"></div>
+						<span class="category">Love &amp; Hate</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Goes Around Comes Around</h2>
+						<div class="loader"></div>
+						<span class="category">Nutrition</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Happens in the Brain?</h2>
+						<div class="loader"></div>
+						<span class="category">Neuroscience</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/6.png" alt="author06" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Tasty Labrador Bacon</h2>
+						<div class="loader"></div>
+						<span class="category">Food Ethics</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/7.png" alt="author07" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Ignorance is Bliss</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/8.png" alt="author08" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Looking Through a Telescope</h2>
+						<div class="loader"></div>
+						<span class="category">Morality &amp; History</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Life Ends. Period.</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Hunger of a Teenager</h2>
+						<div class="loader"></div>
+						<span class="category">Society</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Disorders are the New Order</h2>
+						<div class="loader"></div>
+						<span class="category">Mental Health</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">On Humans &amp; other Beings</h2>
+						<div class="loader"></div>
+						<span class="category">Stories for humans</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Things we Lost in the Fire</h2>
+						<div class="loader"></div>
+						<span class="category">Love &amp; Hate</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Goes Around Comes Around</h2>
+						<div class="loader"></div>
+						<span class="category">Nutrition</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Hope for Amy Walters</h2>
+						<div class="loader"></div>
+						<span class="category">Life &amp; Death</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">My Father told me...</h2>
+						<div class="loader"></div>
+						<span class="category">Nature vs. Nurture</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/5.png" alt="author05" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Happens in the Brain?</h2>
+						<div class="loader"></div>
+						<span class="category">Neuroscience</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/6.png" alt="author06" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Tasty Labrador Bacon</h2>
+						<div class="loader"></div>
+						<span class="category">Food Ethics</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/7.png" alt="author07" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Ignorance is Bliss</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/8.png" alt="author08" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Looking Through a Telescope</h2>
+						<div class="loader"></div>
+						<span class="category">Morality &amp; History</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Life Ends. Period.</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Hunger of a Teenager</h2>
+						<div class="loader"></div>
+						<span class="category">Society</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Disorders are the New Order</h2>
+						<div class="loader"></div>
+						<span class="category">Mental Health</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<footer class="page-meta">
+						<span>Load more...</span>
+					</footer>
+				</section>
+				<section class="content">
+					<div class="scroll-wrap">
+						<article class="content__item">
+							<span class="category category--full">Life &amp; Death</span>
+							<h2 class="title title--full">Hope for Amy Walters</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Sandra Paulson</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 7 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 12 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Nature vs. Nurture</span>
+							<h2 class="title title--full">My Father told me...</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+								<span class="meta__author">Leila Nastafi</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 23 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 253 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Stories for humans</span>
+							<h2 class="title title--full">On Humans &amp; other Beings</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+								<span class="meta__author">Matthew Walters</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 12 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 45 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>I am fully aware of the shortcomings in these essays. I shall not touch upon those which are characteristic of first efforts at investigation. The others, however, demand a word of explanation.</p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Love &amp; Hate</span>
+							<h2 class="title title--full">The Things we Lost in the Fire</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+								<span class="meta__author">Christian Belverde</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 5 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 5 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Nutrition</span>
+							<h2 class="title title--full">What Goes Around Comes Around</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 18 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 125 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Neuroscience</span>
+							<h2 class="title title--full">What Happens in the Brain?</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/6.png" alt="author06" />
+								<span class="meta__author">William Green</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 2 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 16 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>I am fully aware of the shortcomings in these essays. I shall not touch upon those which are characteristic of first efforts at investigation. The others, however, demand a word of explanation.</p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Food Ethics</span>
+							<h2 class="title title--full">Tasty Labrador Bacon</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/7.png" alt="author07" />
+								<span class="meta__author">Peter M. Schuster</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 4 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 13 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Philosophy</span>
+							<h2 class="title title--full">Ignorance is Bliss</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/8.png" alt="author08" />
+								<span class="meta__author">Matthew Walters</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 28 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 89 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Morality &amp; History</span>
+							<h2 class="title title--full">Looking Through a Telescope</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 9 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 19 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Philosophy</span>
+							<h2 class="title title--full">Life Ends. Period.</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+								<span class="meta__author">Christian Belverde</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 18 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 76 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Society</span>
+							<h2 class="title title--full">The Hunger of a Teenager</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 39 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 328 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Mental Health</span>
+							<h2 class="title title--full">Disorders are the New Order</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Sandra Paulson</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 5 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 23 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Stories for humans</span>
+							<h2 class="title title--full">On Humans &amp; other Beings</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+								<span class="meta__author">Matthew Walters</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 27 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 77 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Love &amp; Hate</span>
+							<h2 class="title title--full">The Things we Lost in the Fire</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+								<span class="meta__author">Christian Belverde</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 9 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 43 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Nutrition</span>
+							<h2 class="title title--full">What Goes Around Comes Around</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 13 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 47 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Primitive man is known to us by the stages of development through which he has passed: that is, through the inanimate monuments and implements which he has left behind for us, through our knowledge of his art, his religion and his attitude towards life, which we have received either directly or through the medium of legends, myths and fairy tales; and through the remnants of his ways of thinking that survive in our own manners and customs. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Life &amp; Death</span>
+							<h2 class="title title--full">Hope for Amy Walters</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Sandra Paulson</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 21 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 122 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Nature vs. Nurture</span>
+							<h2 class="title title--full">My Father told me...</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+								<span class="meta__author">Leila Nastafi</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 3 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 19 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Neuroscience</span>
+							<h2 class="title title--full">What Happens in the Brain?</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/6.png" alt="author06" />
+								<span class="meta__author">William Green</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 19 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 38 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>I am fully aware of the shortcomings in these essays. I shall not touch upon those which are characteristic of first efforts at investigation. The others, however, demand a word of explanation.</p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Food Ethics</span>
+							<h2 class="title title--full">Tasty Labrador Bacon</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/7.png" alt="author07" />
+								<span class="meta__author">Peter M. Schuster</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 19 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 75 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Philosophy</span>
+							<h2 class="title title--full">Ignorance is Bliss</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/8.png" alt="author08" />
+								<span class="meta__author">Matthew Walters</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 14 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 41 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Morality &amp; History</span>
+							<h2 class="title title--full">Looking Through a Telescope</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 29 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 65 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Philosophy</span>
+							<h2 class="title title--full">Life Ends. Period.</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+								<span class="meta__author">Christian Belverde</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 2 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 13 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Society</span>
+							<h2 class="title title--full">The Hunger of a Teenager</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+								<span class="meta__author">Carol Freeman</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 19 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 32 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Conscience is the inner perception of objections to definite wish impulses that exist in us; but the emphasis is put upon the fact that this rejection does not have to depend on anything else, that it is sure of itself. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Mental Health</span>
+							<h2 class="title title--full">Disorders are the New Order</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+								<span class="meta__author">Sandra Paulson</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+								<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 54 comments</span>
+								<span class="meta__misc"><i class="fa fa-heart"></i> 278 favorites</span>
+								<nav class="article-nav">
+									<button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
+									<button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+								</nav>
+							</div>
+							<p>Faulty psychic actions, dreams and wit are products of the unconscious mental activity, and like neurotic or psychotic manifestations represent efforts at adjustment to one’s environment. </p>
+							
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+					</div>
+					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

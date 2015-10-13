@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>plugins</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+</head>
+<body>
+	<div class="clearfix">
+		<section class="juro">
+			<span class="input input--juro">
+				<input class="input__field input__field--juro" type="text" id="input-28" />
+				<label class="input__label input__label--juro" for="input-28">
+					<span class="input__label-content input__label-content--juro">Account</span>
+				</label>
+			</span>
+			<span class="input input--juro">
+				<input class="input__field input__field--juro" type="text" id="input-31" />
+				<label class="input__label input__label--juro" for="input-31">
+					<span class="input__label-content input__label-content--juro">password</span>
+				</label>
+			</span>
+
+		</section>
+
+		<section class="naira">
+			
+			<div class="box bg-1">
+				<button class="button button--naira button--round-s button--border-thin"><i class="button__icon icon icon-download"></i><span>Download</span></button>
+				<button class="button button--naira button--round-s button--border-thin button--naira-up"><i class="button__icon icon icon-upload"></i><span>Upload</span></button>
+			</div>
+			
+		</section>
+	</div>	
+	<section>
+		<div class="slider">
+			<div class="slide">
+				<div class="mover-wrap slide__content">
+					<div class="mover slide__bg" data-minscale="0.2" data-outofbounds-x="50">
+						<div class="slide__polaroid"></div>
+						<img class="slide__img" src="imgs/1.jpg" alt="img01" />
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="mover-wrap slide__content">
+					<div class="mover slide__bg" data-minscale="0.3" data-minopacity="0.1" data-outofbounds-x="50">
+						<div class="slide__polaroid"></div>
+						<img class="slide__img" src="imgs/2.jpg" alt="img02" />
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="mover-wrap slide__content">
+					<div class="mover slide__bg" data-minscale="0.3" data-minopacity="0.2" data-rY="40" data-outofbounds-x="50">
+						<div class="slide__polaroid"></div>
+						<img class="slide__img" src="imgs/3.jpg" alt="img03" />
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="mover-wrap slide__content">
+					<div class="mover slide__bg" data-minscale="0.3" data-minopacity="0.3" data-rY="40" data-maxgrayscale="100" data-outofbounds-x="50">
+						<div class="slide__polaroid"></div>
+						<img class="slide__img" src="imgs/4.jpg" alt="img04" />
+					</div>
+				</div>
+			</div>
+			<div class="hint">
+				<div class="hint__item hint__item--next">
+					<i class="hint__icon hint__icon--next icon icon--arrow-left"></i>
+					<span class="hint__text">Drag for<br/> next image</span>
+				</div>
+				<div class="hint__item hint__item--prev">
+					<i class="hint__icon hint__icon--prev icon icon--arrow-right"></i>
+					<span class="hint__text">Drag for<br/> previous image</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/draggabilly.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/dynamics.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/main_2.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+			(function() {
+				new Slideshow(document.querySelector('.slider'));
+			})();
+		</script>
+</body>
+</html>

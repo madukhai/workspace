@@ -1,0 +1,44 @@
+.container {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    margin:0 auto;
+    max-width:960px;
+    padding-bottom:250px;
+}
+.jumbotron {
+    background-color:#3498db;
+    text-align: center;
+    padding: 50px;
+}
+.jumbotron h1 {
+    font-size: 80px;
+}
+.jumbotron h1, .jumbotron h2 {
+    font-weight: inherit;
+}
+.content-image {
+    width: 100%;
+}
+.features, .resources{
+    float: left;
+    width: 50%;
+    background-color: #9b59b6;
+}
+.features-content, .resources-content {
+    padding: 20px;
+}
+.features-content ul, .resources-content ul {
+    line-height: 30px;
+}
+.features-heading, .resources-heading {
+    text-decoration: underline;
+}
+.resources {
+    background-color: #2ecc71;
+}
+.resources-content ul a{
+    color:unset;
+}
+.color {
+    color:#9b59b6;
+}

@@ -1,0 +1,10 @@
+.row h1, .row h3{
+	text-align: center;
+}
+.row div p{
+	font-size: 1.5em;
+	display: inline;
+}
+.row button{
+	float: right;
+}

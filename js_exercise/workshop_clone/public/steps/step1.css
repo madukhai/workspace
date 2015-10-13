@@ -1,0 +1,86 @@
+html,body{
+	height:100%;
+	margin:0;
+	background: #d8d8d8
+}
+body{
+	color:#58595b;
+	font-family: "europa";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1.5;
+	position: relative;
+	cursor: auto;
+	letter-spacing: 0.05rem;
+	-webkit-font-smoothing: subpixel-antialiased
+}
+
+#top{
+	background:url('http://174.129.248.23/brainstation/images/introworkshop/background.jpeg');
+	background-attachment: fixed;
+	background-position:  bottom;
+	background-size:cover;
+	height:60%;
+	width:100%;
+}
+h1{
+	color:#4fbfa6;
+	font-size:18pt;
+	font-weight:400;
+	margin:0px;
+
+}
+h2{
+	font-size:12pt;
+	font-weight: 200;
+	margin:0px;
+
+}
+a{	
+	color:#58595b;
+	text-decoration: none;
+}
+a:hover{
+	color:#4fbfa6;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.profile{
+	width:50em;
+	background: white;
+	margin:0 auto;
+	position: relative;
+	padding:0px 120px;
+}
+.avatar-container{
+	width:25em;
+	text-align:center;
+	position: absolute;
+	left:50%;
+	right:50%;
+	top:-6em;
+	margin-left:-12.5em;
+}
+
+.avatar-container img.avatar{
+	width:12em;
+	height:12em;
+	border-radius:100%;
+	margin-bottom:10px;
+}
+
+/* Code for Step 2 */
+
+

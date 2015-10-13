@@ -1,0 +1,31 @@
+.module2{
+	border-top:1px solid #d8d8d8;
+	border-bottom:1px solid #d8d8d8;
+	padding:20px 0px;
+	width:80%;
+}
+
+
+.module2 .facebook{
+	background: url('http://174.129.248.23/brainstation/images/introworkshop/facebook.png');
+}
+.module2 .twitter{
+	background: url('http://174.129.248.23/brainstation/images/introworkshop/twitter.png');
+}
+.module2 .instagram{
+	background: url('http://174.129.248.23/brainstation/images/introworkshop/instagram.png');
+}
+.module2 .social{
+	display: inline-block;
+	vertical-align: top;
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #4fbfa6;
+	border-radius: 100%;
+	height: 2.5em;
+	width: 2.5em;
+	border: none;
+	margin-right: 5px;
+}
+/* Code for Step 4 */

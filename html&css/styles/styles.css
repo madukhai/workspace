@@ -1,0 +1,91 @@
+ header { 
+ 		background-color: blue;
+ 	 	padding: 10px;
+ 	 }
+ .iverson p { 
+ 	font-style: italic;
+ }
+ .redbox {
+ 	width: 100px;
+ 	height: 100px;
+ 	background-color: red;
+ }
+ .yellowbox {
+ 	width: 200px;
+ 	height: 100px; 
+ 	background-color: yellow;
+ 	border: 5px solid green;
+ }
+ .parent {
+ 	font-weight: bold;
+ 	font-size: 1.50em;
+ 	color: blue;
+ }
+ .child {
+ 	font-weight: normal;
+ 	color: red;
+ }
+
+ .lines {
+ 	width: 100%;
+ }
+ .lines.blue {
+ 	background-color: blue;
+ 	height: 2px; 
+ 	
+ }
+ .lines.red {
+ 	background-color: red;
+ 	height: 4px; 
+ 	
+ }
+ .lines.green {
+ 	background-color: green;
+ 	height: 4px; 
+ 	
+ }
+.box {
+	width: 75%;
+	height: 50px;
+}
+.box.div1 {
+	background-color:rgba(20,20,255,0.5); 
+	border: 2px dotted red;
+	position: absolute; 
+	left: 25%;
+}
+.box.div2 {
+	background-color:rgba(200,80,10,0.5); 
+	border: 2px solid black;
+}
+table {
+	border: 1px solid black;
+	width: 500px;
+}
+td{ 
+	border: 1px solid black;
+}
+td.center{
+	text-align: center;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

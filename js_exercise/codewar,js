@@ -1,0 +1,44 @@
+var vampire_test = function(a, b){
+  var list1 = [];
+  var c = toString(a) + toString(b);
+  var mul = toString(a*b);
+   console.log(mul);
+   console.log(c);
+  if(c.length != mul.length){
+      return false;
+    }
+  for(var j = 0; j<10; j++){
+    list1.push(0);
+  }
+  var list2 = [];
+  for(var i =0; i< mul.length; i++){
+    var index = parseInt(mul[i]);
+    var index1 = parseInt(c[i]);
+    list1[index]++;
+    list2[index1]++;
+  }
+  for(var n=0;n<10;n++){
+    if(list2[n] != list1[n]){
+      return false;
+    }
+  }
+  
+  return true; // fix me
+}
+
+
+Test.describe("Testing For Vampire Numbers", function(){
+  Test.it("should work for some static tests", function(){
+    Test.assertEquals(vampire_test(21,6), true, "Basic: 21 * 6 = 126 should return true")
+    Test.assertEquals(vampire_test(204,615) , true, "Basic: 204 * 615 = 125460 should return true")
+    Test.assertEquals(vampire_test(30,-51) , true, "One Negative: 30 * -51 = -1530 should return true")
+    Test.assertEquals(vampire_test(-246,-510) , false, "Double Negatives: -246 * -510 = 125460 should return false (The negative signs aren't present on the product)")
+    Test.assertEquals(vampire_test(2947050,8469153) , true, "Large: 2947050 * 8469153 = 24959017348650 should return true")
+    Test.assertEquals(vampire_test(2947051,8469153) , false, "Large: 2947051 * 8469153 = 24959025817803 should return false")    
+  });
+});
+
+console.log(vampire_test(6,21));
+
+
+

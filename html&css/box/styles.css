@@ -1,0 +1,59 @@
+h1 {
+	margin: 50px auto 35px auto;
+	border: 20px solid blue;
+	padding: 50px;
+	width: 200px;
+	background-color: red;
+	
+}
+h2 {
+	margin: 25px;
+	border: 10px outset green;
+	padding: 35px;
+	width: 200px;
+	float:left;	
+	
+	
+	background-color: yellow;
+
+}
+h3 {
+	margin: 15px;
+	border: 5px inset red;
+	padding: 15px;
+	width: 150px;
+	float: left;
+
+	
+	
+	background-color: blue;
+	
+
+}
+p {
+	margin: 10px;
+	border: 2px solid black;
+	width: 200px;
+	color: red;
+}
+
+.first {
+	clear:left;
+	width: 100px;
+	
+}
+.second {
+	
+	width: 100px;
+	
+	color: orange;
+	font-size: 2em;
+	border-color: pink;
+
+}
+.third {
+	width: 50px;
+	border: 5px dashed gold;
+	font-style: italic;
+
+}

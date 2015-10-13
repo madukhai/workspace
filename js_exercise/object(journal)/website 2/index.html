@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title></title>
+</head>
+<body>
+	<div id="overlay" class="overlay close-modal"></div>
+	<div id="modal" class="custom-modal">
+		<div class="close close-modal">
+			<i class="fa fa-times-circle"></i>
+		</div>
+		<h1>Congratulations</h1>
+		<p>
+			Your form has been submitted
+		</p>
+	</div>
+	<section class="main-content">
+		<div id="carousel" class="carousel">
+			<form id="myForm" action="">
+			<article class="slide">
+				<div class="title">
+					Account Info
+				</div>
+
+				<div>
+					<input type="text" placeholder="Email">
+				</div>
+				<div>
+					<input type="text" placeholder="password">
+				</div>
+
+			</article>
+
+			<article class="slide">
+				<div class="title">
+					User Info
+				</div>
+
+				<div>
+					<input type="text" placeholder="Name">
+				</div>
+				<div>
+					<input type="text" placeholder="Gender">
+				</div>
+			</article>
+
+			<article class="slide">
+				<div class="title">
+					User Bio
+				</div>
+
+				<div>
+					<textarea></textarea>
+				</div>
+				
+			</article>
+			</form>
+			<div class="carousel-nav">
+				<button class="btn btn-primary adv-next">Next</button>
+				<button class="btn btn-primary submit">Submit</button>
+			</div>
+			
+		</div>
+		<button id="open-modal" class="open-modal">Open Modal</button>
+	</section>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
